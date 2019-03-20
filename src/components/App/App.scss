@@ -1,0 +1,63 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main-container {
+  padding: 10px;
+
+  .skill-form {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .input {
+      height: 40px;
+      border: solid #667585 1px;
+      padding: 0 2.5%;
+      border-radius: 3px;
+    }
+
+    .skill-input {
+      flex: 0 0 95%;
+      margin-bottom: 20px;
+    }
+
+    .experience-selector {
+      flex: 0 0 66%;
+    }
+
+    .add-skills-btn {
+      flex: 0 0 30%;
+      background-color: #33485c;
+      color: #ffffff;
+      height: 40px;
+      border-radius: 4px;
+
+      &:hover {
+        background-color: #617080;        
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    .skill-form {
+      flex-wrap: nowrap;
+
+      .skill-input {
+        flex: 0 0 40%;
+      }
+
+      .experience-selector {
+        flex: 0 0 35%;
+      }
+
+      .add-skills-btn {
+        flex: 0 0 15%;
+      }
+    }
+  }
+}
+
+

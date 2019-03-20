@@ -1,0 +1,14 @@
+.skill-list {
+  width: 100%;
+  padding: 0;
+}
+
+@media (min-width: 992px) {
+ .skill-list {
+   display: flex;
+   flex-flow: row wrap;
+   width: 98%;
+   padding: 1%;
+   background-color: #f5f5f5;
+ } 
+}
