@@ -8,14 +8,14 @@ const Skills = ({ skills = [], fetchSkills = () => {} }) => {
   }, []);
 
   const skillItems = skills.map((skill, index) => {
-    const { id, name, expirience } = skill;
+    const { id, name, experience } = skill;
     return (
       <SkillItem
         key={index}
         id={id}
         count={index + 1}
         desc={name}
-        experience={expirience}
+        experience={experience}
       />
     );
   });

@@ -1,7 +1,13 @@
 import React from 'react';
 import './SkillItem.scss';
 
-const SkillItem = ({ count = 1, desc = '', experience = '' }) => {
+const SkillItem = ({
+  id,
+  count = 1,
+  desc = '',
+  experience = '',
+  removeSkill = () => {}
+}) => {
   return (
     <li className="skill-item">
       <div className="count">{count}</div>
@@ -9,7 +15,7 @@ const SkillItem = ({ count = 1, desc = '', experience = '' }) => {
         <div>{desc}</div>
         <div>{experience}</div>
       </div>
-      <div className="actions">
+      <div className="actions" onClick={() => removeSkill(id)}>
         <i className="fas fa-times" />
       </div>
     </li>

@@ -12,13 +12,24 @@ export const fetchSkills= () => {
   };
 };
 
-export const addSkill= (data) => {
+export const addSkill= (data = {}) => {
   return async dispatch => {
     try {
       await api.add(data);
       dispatch({ type: types.ADD_SKILL_SUCCESS, data });
     } catch (error) {
       dispatch({ type: types.ADD_SKILL_FAIL });
+    }
+  };
+};
+
+export const removeSkill= (skillId) => {
+  return async dispatch => {
+    try {
+      await api.remove(skillId);
+      dispatch({ type: types.DELETE_SKILL_SUCCESS, skillId });
+    } catch (error) {
+      dispatch({ type: types.DELETE_SKILL_FAIL });
     }
   };
 };

@@ -16,12 +16,9 @@ export function add(data) {
   });
 }
 
-// export function remove() {
-//   return axios.request({
-//     url: `${API_URL}`,
-//     method: 'POST',
-//     headers: {
-//       authorization: `Bearer ${token}`
-//     }
-//   });
-// }
+export function remove(skillId) {
+  return axios.request({
+    url: `${API_URL}/${skillId}`,
+    method: 'DELETE'
+  });
+}

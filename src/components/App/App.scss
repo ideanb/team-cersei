@@ -38,6 +38,11 @@ body {
       &:hover {
         background-color: #617080;        
       }
+
+      &:disabled {
+        background-color: #ebebeb;
+        color: #cfcfcf;
+      }
     }
   }
 
