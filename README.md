@@ -13,3 +13,4 @@ It took me 7 hours to finish
 - Research more about how to test stateless components that use react hooks.
 - Add more smooth interacions to improve UI and UX.
 - Handle failures.
+- Reorder skills.
