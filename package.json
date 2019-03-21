@@ -26,7 +26,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --coverage",
+    "test": "react-scripts test",
+    "coverage": "react-scripts test --coverage",
     "eject": "react-scripts eject",
     "api": "json-server --watch db.json"
   },
@@ -44,7 +45,8 @@
       "src/**/*.{js}",
       "!/node_modules/",
       "!src/components/index.js",
-      "!src/components/*/**/index.js"
+      "!src/components/*/**/index.js",
+      "!src/store/mainReducers.js"
     ]
   }
 }

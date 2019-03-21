@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import App from './App';
 import * as skillActions from '../../store/skills/actions';
 
-function mapStateToProps(state) {
+export function mapStateToProps(state) {
   const { skills } = state;
   return {
     skills: skills.data

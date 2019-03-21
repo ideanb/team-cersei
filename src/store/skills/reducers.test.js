@@ -20,6 +20,12 @@ it('should add skills', () => {
 });
 
 it('should remove skills', () => {
+  const state = {
+    data: [
+      { id: 123},
+      { id: 456},
+    ]
+  }
   const action = { type: types.DELETE_SKILL_SUCCESS, skillId: 123 };
-  expect(data({}, action)).to.eql({ data: [] });
+  expect(data(state, action)).to.eql({ data: [ { id: 456 } ] });
 });
