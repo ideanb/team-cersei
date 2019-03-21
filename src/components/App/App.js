@@ -8,12 +8,12 @@ const App = ({ skills = [], addSkill = () => {} }) => {
 
   const handleSubmit = () => {
     if (!skillName || !experience) {
-      return;
+      return false;
     }
 
     if (skillName.length < 4) {
       alert('skill name should be greater than 4 characters');
-      return;
+      return false;
     }
 
     //select max id to add next skill
